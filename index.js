@@ -7,10 +7,14 @@ const transformTypedData = require('trezor-connect/lib/plugins/ethereum/typedDat
 
 const hdPathString = `m/44'/60'/0'/0`;
 const SLIP0044TestnetPath = `m/44'/1'/0'/0`;
+const LedgerLivePath = `m/44'/60'/0'/0/0`;
+const MewPath = `m/44'/60'/0'`;
 
 const ALLOWED_HD_PATHS = {
   [hdPathString]: true,
   [SLIP0044TestnetPath]: true,
+  [LedgerLivePath]: true,
+  [MewPath]: true,
 };
 
 const keyringType = 'Trezor Hardware';
